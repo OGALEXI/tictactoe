@@ -19,6 +19,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     color: white;
+    box-shadow: rgba(70, 2, 46, 0.35) 0px 5px 15px;
 }
 
 .game-box {
@@ -28,9 +29,11 @@ body {
     background-image: linear-gradient(rgb(255, 123, 0), red, rgb(255, 0, 149));
     color: white;
     width: 40%;
+    height: fit-content;
     border-radius: 5px;
     margin: 50px;
     padding: 50px;
+    box-shadow: rgba(70, 2, 46, 0.35) 0px 5px 15px;
 }
 
 .btn-box {
@@ -57,4 +60,28 @@ body {
     width: 7.5rem;
     height: 3.5rem;
     box-shadow: rgba(70, 2, 46, 0.35) 0px 5px 15px;
+}
+
+
+
+.tic-tac-toe {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 20rem;
+    width: 80%;
+    padding: 5px;
+    border-spacing: 5px;
+}
+
+.tic-box {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.tic-box:hover {
+    background-color: rgba(194, 3, 92, 0.408);
+}
+
+#begin {
+    color: black;
 }

@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap"
         rel="stylesheet">
+    <script src="condrender.js"></script>
     <title>Tic Tac Toe</title>
+
 </head>
 
 <body>
     <div class="title">
         <h1>Tic Tac Toe</h1>
     </div>
-    <div class="game-box">
+    <div class="game-box" id="game-box">
         <h2>Would you like to play?</h2>
         <section class="btn-box">
-            <button class="btn">Yes</button>
-            <button class="btn">No</button>
+            <button class="btn" id="yes-btn" onclick="gameBegin()">Yes</button>
+            <button class="btn" id="no-btn" onclick="boo()">No</button>
         </section>
     </div>
 </body>
