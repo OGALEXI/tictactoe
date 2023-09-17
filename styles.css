@@ -26,10 +26,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background-image: linear-gradient(rgb(255, 123, 0), red, rgb(255, 0, 149));
     color: white;
     width: 40%;
-    height: fit-content;
+    height: 100%;
     border-radius: 5px;
     margin: 50px;
     padding: 50px;
@@ -65,17 +66,39 @@ body {
 
 
 .tic-tac-toe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     border: 3px solid black;
     border-radius: 5px;
-    height: 20rem;
+    height: 100%;
     width: 80%;
+    overflow: auto;
+    margin: 10px;
     padding: 5px;
-    border-spacing: 5px;
+}
+
+break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
 }
 
 .tic-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
     border: 3px solid black;
     border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    height: 25%;
+    width: 25%;
+    color: black;
+    margin: 5px;
 }
 
 .tic-box:hover {
@@ -83,5 +106,33 @@ body {
 }
 
 #begin {
+    padding: 10px;
+    margin: 0px;
+    color: black
+}
+
+.move {
+    color: pink;
+}
+
+#reset-btn {
+    background-color: rgba(255, 255, 255, 0);
     color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 20%;
+    width: 40%;
+    font-size: large;
+}
+
+#reset-btn:hover {
+    background-color: rgba(194, 3, 92, 0.408);
+}
+
+.winner {
+    background-color: rgba(255, 0, 149, 0);
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
 }
