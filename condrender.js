@@ -62,6 +62,7 @@ function gameBegin() {
 
   resetBtn.addEventListener('click', () => {
     gameBegin();
+    location.reload();
   });
 
   function init() {
